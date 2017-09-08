@@ -1,15 +1,16 @@
 {
     "name": "ftiersch/chameleon",
     "description": "A Laravel Package to enable temporary user switching for admins",
-    "require": {
-        "illuminate/support": "^5.5"
-    },
     "authors": [
         {
             "name": "Frank Tiersch",
             "email": "mail@ftiersch.de"
         }
     ],
+    "homepage": "https://github.com/ftiersch/chameleon",
+    "require": {
+        "illuminate/support": "^5.5"
+    },
     "extra": {
         "laravel" : {
             "providers" : [
@@ -17,4 +18,9 @@
             ]
         }
     }
+    "autoload": {
+        "psr-4": {
+            "Ftiersch\\Chameleon\\": "src/"
+        }
+    },
 }
