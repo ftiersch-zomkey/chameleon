@@ -1,13 +1,19 @@
 {
     "name": "ftiersch/chameleon",
     "description": "A Laravel Package to enable temporary user switching for admins",
+    "homepage": "https://github.com/ftiersch/chameleon",
     "authors": [
         {
             "name": "Frank Tiersch",
             "email": "mail@ftiersch.de"
         }
     ],
-    "homepage": "https://github.com/ftiersch/chameleon",
+    "keywords": [
+        "laravel",
+        "impersonate",
+        "userswitch"
+    ],
+    "license": "MIT",
     "require": {
         "illuminate/support": "^5.5"
     },
