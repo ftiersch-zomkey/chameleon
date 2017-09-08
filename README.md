@@ -63,7 +63,7 @@ protected $routeMiddleware = [
 ```
 
 To activate the chameleon functionality you can enable the middleware in your routes file
-now like this:
+like this:
 
 ```php
 Route::get('/home', 'HomeController@index')->middleware('impersonate');
