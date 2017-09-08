@@ -17,10 +17,10 @@
                 "FTiersch\\Chameleon\\ChameleonServiceProvider"
             ]
         }
-    }
+    },
     "autoload": {
         "psr-4": {
             "Ftiersch\\Chameleon\\": "src/"
         }
-    },
+    }
 }
