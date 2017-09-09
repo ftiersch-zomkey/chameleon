@@ -69,6 +69,22 @@ like this:
 Route::get('/home', 'HomeController@index')->middleware('impersonate');
 ```
 
+### Prepare your User class for impersonation
+For ease of use there is an interface and a trait that your User class have to
+implement / use. They will add all the functionality needed for impersonations.
+
+```php
+...
+use Ftiersch\Chameleon\Traits\Impersonatable;
+use Ftiersch\Chameleon\Interfaces\CanImpersonate;
+
+class User extends Authenticatable implements CanImpersonate
+{
+    use Impersonatable;
+    
+    ...
+}
+```
 
 ### Add a link to start / stop impersonating someone
 Finally, after registering the code, you need a way to choose impersonating someone.

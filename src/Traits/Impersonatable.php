@@ -2,6 +2,14 @@
 
 namespace Ftiersch\Chameleon\Traits;
 
+/**
+ * Trait Impersonatable
+ *
+ * This trait implements basic versions of all methods needed to impersonate another user.
+ * If used by the User class everything should be in place.
+ * For better security the canImpersonate($user) method can be overridden to implement own
+ * security checks.
+ */
 trait Impersonatable {
     public function impersonate($user) {
         if ($user->id == $this->id) {

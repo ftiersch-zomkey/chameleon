@@ -4,6 +4,12 @@ namespace Ftiersch\Chameleon\Middleware;
 
 use Closure;
 
+/**
+ * Class Impersonate
+ *
+ * The impersonate middleware handles impersonations on a per request basis.
+ * After checking
+ */
 class Impersonate
 {
     /**

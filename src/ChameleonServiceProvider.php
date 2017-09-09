@@ -26,7 +26,10 @@ class ChameleonServiceProvider extends ServiceProvider
         Blade::directive('endimpersonating', function () {
             return "<?php } ?>";
         });
-        
+
+        // The @canimpersonatedirective is an if to check if the
+        // currently logged in user is allowed to impersonate the given user.
+        // This can be used to display a "login as x" button only if it's possible.
         Blade::directive('canimpersonate', function ($expression) {
             return "<?php if (auth()->check() && auth()->user()->canImpersonate($expression) && !session()->has('ftiersch-chameleon-is-impersonating')) { ?>";
         });        
